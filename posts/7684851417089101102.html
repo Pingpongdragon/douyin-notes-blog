@@ -1,0 +1,49 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>回测年化 50% 上实盘就亏？量化过拟合一视频讲透</title><style>
+:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f6f8fb;color:#0f172a;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;line-height:1.8}
+.wrap{max-width:900px;margin:0 auto;padding:36px 18px 80px}
+article{background:#fff;border:1px solid #e5eaf2;border-radius:18px;padding:34px 38px;box-shadow:0 8px 30px rgba(15,23,42,.04)}
+h1{font-size:30px;line-height:1.3;margin:0 0 10px}h2{font-size:21px;margin:30px 0 10px}
+a{color:#2563eb;text-decoration:none}a:hover{text-decoration:underline}
+.meta{color:#64748b;font-size:14px;margin:0 0 18px}
+.cover{width:100%;border-radius:14px;display:block;margin:18px 0;border:1px solid #e5eaf2}
+.summary{background:#f8fafc;border:1px solid #e5eaf2;border-left:4px solid #3b82f6;border-radius:10px;padding:14px 18px;margin:20px 0}
+.summary strong{display:block;margin-bottom:4px}
+.body p{margin:12px 0}.body ul,.body ol{margin:10px 0 10px 22px}.body li{margin:6px 0}
+.body blockquote{margin:16px 0;padding:10px 16px;border-left:3px solid #93c5fd;background:#f8fafc;color:#334155}
+.body code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+.body pre{background:#0f172a;color:#e2e8f0;padding:14px;border-radius:10px;overflow:auto}
+.back{display:inline-block;margin-bottom:16px;color:#64748b;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{background:#fff;border:1px solid #e5eaf2;border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(15,23,42,.04);display:flex;flex-direction:column;color:inherit}
+.card img{width:100%;height:150px;object-fit:cover;display:block;background:#e2e8f0}
+.card .pad{padding:14px 16px 18px}.card h2{font-size:17px;margin:0 0 8px;line-height:1.4}
+.card p{font-size:13px;color:#475569;margin:0 0 8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card small{color:#94a3b8;font-size:12px}
+.empty{padding:40px 0;color:#64748b;text-align:center}
+@media(max-width:640px){.wrap{padding:20px 12px 50px}article{padding:22px 18px}h1{font-size:24px}}
+</style></head><body><div class="wrap"><a class="back" href="../index.html">← 返回列表</a>
+<article>
+  <h1>回测年化 50% 上实盘就亏？量化过拟合一视频讲透</h1>
+  <p class="meta">作者：维克兜率天 · <a href="https://www.douyin.com/video/7684851417089101102/" target="_blank" rel="noreferrer">7684851417089101102</a> · 2026-11-09</p>
+  
+  <div class="summary"><strong>一句话总结</strong>回测漂亮、实盘崩掉，核心是过拟合：策略拟合了历史噪声。视频拆了过拟合是什么、怎么产生、怎么判断、怎么避免，并称这是 90% 量化新人都会踩的坑。</div>
+  <div class="body"><h2>一句话总结</h2>
+<p>这条视频只讲一件事：<strong>回测漂亮、实盘崩掉，通常不是策略“突然失效”，而是过拟合</strong>。作者用“回测年化 50%，上实盘就亏”这个典型场景，拆了过拟合是什么、怎么产生、怎么判断、怎么避免。</p>
+
+<h2>视频讲了什么</h2>
+<p>开头先给了一个很扎心的对照：回测猛如虎，实盘二百五，并说这是 90% 量化新人都会走一遍的路。视频把原因直接归到“过拟合”——回测曲线太漂亮，往往是因为策略把历史数据里的噪声也当成了规律；换一段真实行情，这些噪声不再重复，收益就崩了。</p>
+<p>文案里列了四个问题：过拟合到底是什么、它是怎么产生的、怎么判断自己的策略已经过拟合、以及怎么避免。视频的定位是“一条视频讲透”，所以更像概念科普 + 判断清单，而不是完整的策略工程课。具体每个判断方法在视频里怎么展开，单看文案无法确认，这里不替它补细节。</p>
+
+<h2>关键点</h2>
+<ul>
+<li><strong>现象</strong>：回测年化 50%，实盘却亏钱，是量化新人常见的落差。</li>
+<li><strong>核心解释</strong>：过拟合——策略拟合了历史噪声，而不是可持续的规律。</li>
+<li><strong>为什么回测会骗人</strong>：历史数据里既有真信号，也有偶然的、不会重复的噪声。</li>
+<li><strong>要回答的四个问题</strong>：过拟合是什么、怎么产生、怎么判断、怎么避免。</li>
+<li><strong>定位</strong>：一条视频讲透概念与判断框架，适合当入门索引，不替代完整的样本外/滚动验证流程。</li>
+</ul>
+
+<h2>适合谁看</h2>
+<p>刚开始做量化、回测收益很好看但实盘不敢下手的人；以及想快速理解“为什么回测和实盘差这么多”的投资者。视频偏概念和清单，适合先建立正确预期，再自己去补样本外检验、参数扰动、交易成本这些硬功夫。</p>
+</div>
+</article></div></body></html>
