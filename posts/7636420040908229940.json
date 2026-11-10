@@ -1,0 +1,9 @@
+{
+  "bvid": "7636420040908229940",
+  "title": "12 个 Agent 原理一口气版：从 messages 数组到 Multi-Agent",
+  "author": "学习AI的1000天",
+  "summary": "把 Agent 的 12 个基础词压成一张清单：messages 数组、上下文窗口、系统提示、CoT、Few-Shot、Prefill、停止序列、Tool Use、RAG、ReAct、自回归生成、Multi-Agent 编排，适合查漏补缺。",
+  "published": "2026-11-10",
+  "cover": "",
+  "url": "https://www.douyin.com/video/7636420040908229940/"
+}
