@@ -1,0 +1,50 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Agent 开发第一课：50 行代码先跑通最小循环</title><style>
+:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f6f8fb;color:#0f172a;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;line-height:1.8}
+.wrap{max-width:900px;margin:0 auto;padding:36px 18px 80px}
+article{background:#fff;border:1px solid #e5eaf2;border-radius:18px;padding:34px 38px;box-shadow:0 8px 30px rgba(15,23,42,.04)}
+h1{font-size:30px;line-height:1.3;margin:0 0 10px}h2{font-size:21px;margin:30px 0 10px}
+a{color:#2563eb;text-decoration:none}a:hover{text-decoration:underline}
+.meta{color:#64748b;font-size:14px;margin:0 0 18px}
+.cover{width:100%;border-radius:14px;display:block;margin:18px 0;border:1px solid #e5eaf2}
+.summary{background:#f8fafc;border:1px solid #e5eaf2;border-left:4px solid #3b82f6;border-radius:10px;padding:14px 18px;margin:20px 0}
+.summary strong{display:block;margin-bottom:4px}
+.body p{margin:12px 0}.body ul,.body ol{margin:10px 0 10px 22px}.body li{margin:6px 0}
+.body blockquote{margin:16px 0;padding:10px 16px;border-left:3px solid #93c5fd;background:#f8fafc;color:#334155}
+.body code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+.body pre{background:#0f172a;color:#e2e8f0;padding:14px;border-radius:10px;overflow:auto}
+.back{display:inline-block;margin-bottom:16px;color:#64748b;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{background:#fff;border:1px solid #e5eaf2;border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(15,23,42,.04);display:flex;flex-direction:column;color:inherit}
+.card img{width:100%;height:150px;object-fit:cover;display:block;background:#e2e8f0}
+.card .pad{padding:14px 16px 18px}.card h2{font-size:17px;margin:0 0 8px;line-height:1.4}
+.card p{font-size:13px;color:#475569;margin:0 0 8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card small{color:#94a3b8;font-size:12px}
+.empty{padding:40px 0;color:#64748b;text-align:center}
+@media(max-width:640px){.wrap{padding:20px 12px 50px}article{padding:22px 18px}h1{font-size:24px}}
+</style></head><body><div class="wrap"><a class="back" href="../index.html">← 返回列表</a>
+<article>
+  <h1>Agent 开发第一课：50 行代码先跑通最小循环</h1>
+  <p class="meta">作者：谦行AIing · <a href="https://www.douyin.com/video/7697834671136165161/" target="_blank" rel="noreferrer">7697834671136165161</a> · 2026-11-12</p>
+  
+  <div class="summary"><strong>一句话总结</strong>课程引子：用 50 行代码实现极简 Agent，讲为什么转型 Agent 开发、课程目录与最小实现；文案未展开代码细节，核心是系统提示、messages、工具定义、工具调用循环和停止条件。</div>
+  <div class="body"><h2>一句话总结</h2>
+<p>这条视频是「Agent 开发第一课」的引子：用 <strong>50 行代码实现一个极简 Agent</strong>，并解释为什么现在人人都该了解 Agent 开发、课程会按什么路径展开。</p>
+
+<h2>视频讲了什么</h2>
+<p>文案给出的信息不多，核心是三个点：为什么转型 Agent 开发、Agent 开发课程目录、以及一个极简 Agent 的实现。视频标题强调“50 行代码”，说明它想用最小可运行例子，把 Agent 的骨架先搭出来，而不是一上来讲框架和工程化。</p>
+<p>从“极简 Agent”这个定位看，50 行代码通常只需要五块：一个系统提示、一个 messages 数组、一份工具定义、一个“模型输出工具调用就执行、把结果塞回上下文”的循环，以及一个停止条件。重点不是代码量，而是让第一次接触的人看清：Agent 不是神秘框架，就是“模型 + 工具 + 循环”。</p>
+<p>文案没有展开具体代码和课程每一节的内容，所以这里不替它补实现细节；真正讲没讲多 Agent、记忆、评测，需要看视频正文。</p>
+
+<h2>关键点</h2>
+<ul>
+<li><strong>定位</strong>：Agent 开发第一课，面向想入门的人，用 50 行代码做最小实现。</li>
+<li><strong>为什么转型</strong>：视频把 Agent 开发作为一个值得投入的方向，但文案没有展开论证。</li>
+<li><strong>课程目录</strong>：文案只提到有目录，具体章节未列出。</li>
+<li><strong>极简 Agent 的骨架</strong>：系统提示 + messages + 工具定义 + 工具调用循环 + 停止条件。</li>
+<li><strong>学习建议</strong>：先跑通最小循环，再补记忆、RAG、评测和工程化，不要一开始就上重框架。</li>
+</ul>
+
+<h2>适合谁看</h2>
+<p>想学 Agent 开发但被框架吓住的人；以及想先看一个“最小可运行例子”再决定要不要深入的人。视频是入门引子，适合建立骨架认知，不适合当完整项目教程。</p>
+</div>
+</article></div></body></html>
