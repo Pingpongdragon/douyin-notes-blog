@@ -1,0 +1,52 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>从零搭一个 Agent：四块框架与七步上岗</title><style>
+:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f6f8fb;color:#0f172a;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;line-height:1.8}
+.wrap{max-width:900px;margin:0 auto;padding:36px 18px 80px}
+article{background:#fff;border:1px solid #e5eaf2;border-radius:18px;padding:34px 38px;box-shadow:0 8px 30px rgba(15,23,42,.04)}
+h1{font-size:30px;line-height:1.3;margin:0 0 10px}h2{font-size:21px;margin:30px 0 10px}
+a{color:#2563eb;text-decoration:none}a:hover{text-decoration:underline}
+.meta{color:#64748b;font-size:14px;margin:0 0 18px}
+.cover{width:100%;border-radius:14px;display:block;margin:18px 0;border:1px solid #e5eaf2}
+.summary{background:#f8fafc;border:1px solid #e5eaf2;border-left:4px solid #3b82f6;border-radius:10px;padding:14px 18px;margin:20px 0}
+.summary strong{display:block;margin-bottom:4px}
+.body p{margin:12px 0}.body ul,.body ol{margin:10px 0 10px 22px}.body li{margin:6px 0}
+.body blockquote{margin:16px 0;padding:10px 16px;border-left:3px solid #93c5fd;background:#f8fafc;color:#334155}
+.body code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+.body pre{background:#0f172a;color:#e2e8f0;padding:14px;border-radius:10px;overflow:auto}
+.back{display:inline-block;margin-bottom:16px;color:#64748b;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{background:#fff;border:1px solid #e5eaf2;border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(15,23,42,.04);display:flex;flex-direction:column;color:inherit}
+.card img{width:100%;height:150px;object-fit:cover;display:block;background:#e2e8f0}
+.card .pad{padding:14px 16px 18px}.card h2{font-size:17px;margin:0 0 8px;line-height:1.4}
+.card p{font-size:13px;color:#475569;margin:0 0 8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card small{color:#94a3b8;font-size:12px}
+.empty{padding:40px 0;color:#64748b;text-align:center}
+@media(max-width:640px){.wrap{padding:20px 12px 50px}article{padding:22px 18px}h1{font-size:24px}}
+</style></head><body><div class="wrap"><a class="back" href="../index.html">← 返回列表</a>
+<article>
+  <h1>从零搭一个 Agent：四块框架与七步上岗</h1>
+  <p class="meta">作者：新一Ai · <a href="https://www.douyin.com/video/7680489379543123643/" target="_blank" rel="noreferrer">7680489379543123643</a> · 2026-11-14</p>
+  
+  <div class="summary"><strong>一句话总结</strong>用四块内容讲搭 Agent：Agent 是什么、长什么样、由什么组成（Skill/CLI/MCP），以及从建工位到新窗口验证上岗的七步；全程不写代码，重点是任务拆解、skill 与工具配置。</div>
+  <div class="body"><h2>一句话总结</h2>
+<p>这条视频想用“四块 + 七步”把搭 Agent 讲完整：先搞清 Agent 是什么、长什么样、由什么组成（Skill/CLI/MCP），再从建工位到新窗口验证上岗，走完一套不写代码的流程。</p>
+
+<h2>视频讲了什么</h2>
+<p>文案给了一个很清晰的结构：四块内容加一条七步路径。第一块是“Agent 是什么”——它不是聊天机器人，而是能主动思考、调用工具、读写文件、把任务往下推进的“AI 员工”。第二块是“它长什么样”——用户看到的是一个工作台/工位，背后是模型、工具、技能和上下文。</p>
+<p>第三块是“由什么组成”：Skill 负责一类任务的做法与流程，CLI 负责执行命令，MCP 负责连接外部系统与数据。三者分工不同：Skill 告诉 Agent“怎么做”，CLI 让它“能动手”，MCP 让它“够得着”外部工具和资料。</p>
+<p>第四块是“从零搭的七步”：文案没有逐条列出七步名称，只概括为“从建工位到新窗口验证上岗”。可以确定的是，流程终点不是“搭完就算”，而是换一个新窗口做验证——确认 Agent 在没有当前对话上下文的情况下，仍能按 skill 和工具把任务跑通。</p>
+<p>作者强调全程不用写代码，自己的选品、剪辑、做图 Agent 都是这么搭的。这说明重点在“配置与流程设计”，不是编程：把任务拆清楚、把 skill 写清楚、把工具接好，再验证。</p>
+
+<h2>关键点</h2>
+<ul>
+<li><strong>Agent 不是聊天</strong>：能主动推进、调用工具、读写文件，才叫“干活”。</li>
+<li><strong>四块框架</strong>：是什么、长什么样、由什么组成、七步怎么搭。</li>
+<li><strong>三件套分工</strong>：Skill 管做法，CLI 管执行，MCP 管连接外部。</li>
+<li><strong>七步路径</strong>：从建工位到验证上岗；具体七步需看视频正文。</li>
+<li><strong>新窗口验证</strong>：换一个没有当前上下文的窗口还能跑，才算真的搭好。</li>
+<li><strong>不写代码</strong>：重点是任务拆解、skill 编写与工具配置。</li>
+</ul>
+
+<h2>适合谁看</h2>
+<p>想自己搭一个 Agent、但被“框架/代码”吓住的人；以及搭完只在当前对话里能用、换窗口就失效的人。视频是流程框架，具体七步与配置需要跟着正文操作。</p>
+</div>
+</article></div></body></html>
