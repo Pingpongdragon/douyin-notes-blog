@@ -1,0 +1,54 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>从零搭一个量化策略：想法、数据、信号、回测与风控</title><style>
+:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f6f8fb;color:#0f172a;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;line-height:1.8}
+.wrap{max-width:900px;margin:0 auto;padding:36px 18px 80px}
+article{background:#fff;border:1px solid #e5eaf2;border-radius:18px;padding:34px 38px;box-shadow:0 8px 30px rgba(15,23,42,.04)}
+h1{font-size:30px;line-height:1.3;margin:0 0 10px}h2{font-size:21px;margin:30px 0 10px}
+a{color:#2563eb;text-decoration:none}a:hover{text-decoration:underline}
+.meta{color:#64748b;font-size:14px;margin:0 0 18px}
+.cover{width:100%;border-radius:14px;display:block;margin:18px 0;border:1px solid #e5eaf2}
+.summary{background:#f8fafc;border:1px solid #e5eaf2;border-left:4px solid #3b82f6;border-radius:10px;padding:14px 18px;margin:20px 0}
+.summary strong{display:block;margin-bottom:4px}
+.body p{margin:12px 0}.body ul,.body ol{margin:10px 0 10px 22px}.body li{margin:6px 0}
+.body blockquote{margin:16px 0;padding:10px 16px;border-left:3px solid #93c5fd;background:#f8fafc;color:#334155}
+.body code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+.body pre{background:#0f172a;color:#e2e8f0;padding:14px;border-radius:10px;overflow:auto}
+.back{display:inline-block;margin-bottom:16px;color:#64748b;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{background:#fff;border:1px solid #e5eaf2;border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(15,23,42,.04);display:flex;flex-direction:column;color:inherit}
+.card img{width:100%;height:150px;object-fit:cover;display:block;background:#e2e8f0}
+.card .pad{padding:14px 16px 18px}.card h2{font-size:17px;margin:0 0 8px;line-height:1.4}
+.card p{font-size:13px;color:#475569;margin:0 0 8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card small{color:#94a3b8;font-size:12px}
+.empty{padding:40px 0;color:#64748b;text-align:center}
+@media(max-width:640px){.wrap{padding:20px 12px 50px}article{padding:22px 18px}h1{font-size:24px}}
+</style></head><body><div class="wrap"><a class="back" href="../index.html">← 返回列表</a>
+<article>
+  <h1>从零搭一个量化策略：想法、数据、信号、回测与风控</h1>
+  <p class="meta">作者：量化舵 · <a href="https://www.douyin.com/video/7706480828255112499/" target="_blank" rel="noreferrer">7706480828255112499</a> · 2026-11-16</p>
+  
+  <div class="summary"><strong>一句话总结</strong>从零搭量化策略的六步框架：可检验的假设、干净数据、可复现信号、含成本的回测、风控、样本外验证；核心不是神奇指标，而是每一步都能被检验和复现。</div>
+  <div class="body"><h2>一句话总结</h2>
+<p>这条视频是“从零搭一个量化策略”的实操引子：把策略拆成<strong>想法 → 数据 → 信号 → 回测 → 风控 → 样本外验证</strong>六步，重点不是找一个神奇指标，而是让每一步都能被检验、被复现。</p>
+
+<h2>视频讲了什么</h2>
+<p>文案只给了标题和标签，没有展开具体策略。结合“从零开始搭建”这个定位，可以确定它面向的是第一次自己搭策略的人：先有一个可检验的假设，再用数据把它变成信号，最后用回测判断它是不是真的有效。</p>
+<p>第一步是想法。好的起点通常不是“预测明天涨跌”，而是一个有经济含义的假设：比如趋势会延续、极端情绪会回归、两个相关资产的价差会收敛。假设越具体，后面越容易验证。</p>
+<p>第二步是数据。行情、财务、交易数据要先对齐口径，处理复权、停牌、退市和未来函数。很多回测漂亮、实盘崩掉，问题就出在数据层：用了当天收盘后才知道的信息，或者忽略了交易成本。</p>
+<p>第三步是信号。把假设写成明确的入场、出场条件，而不是“感觉要涨”。信号要能计算、能复现，参数不能多到把历史噪声都拟合进去。</p>
+<p>第四步是回测。除了收益，还要看最大回撤、胜率、盈亏比、换手率、容量；把手续费、滑点、冲击成本算进去。第五步是风控：单笔风险、总仓位、相关性、止损和极端行情预案。第六步是样本外验证：留一段没参与调参的数据，或者做滚动回测，看策略是否只在历史区间有效。</p>
+<p>视频是“从零搭建”的流程演示，具体代码、参数和品种需要看正文；这里不替它补策略细节。</p>
+
+<h2>关键点</h2>
+<ul>
+<li><strong>先假设后数据</strong>：有经济含义的假设，比堆指标更可持续。</li>
+<li><strong>数据要干净</strong>：复权、停牌、退市、未来函数，都是常见坑。</li>
+<li><strong>信号要可复现</strong>：明确入场/出场，参数别过多。</li>
+<li><strong>回测看全指标</strong>：收益、回撤、换手、成本、容量，不只看年化。</li>
+<li><strong>风控先行</strong>：仓位、相关性、止损、极端行情预案。</li>
+<li><strong>样本外验证</strong>：没参与调参的数据，才是策略的试金石。</li>
+</ul>
+
+<h2>适合谁看</h2>
+<p>想自己搭第一个量化策略、但不知道从哪下手的人；以及回测收益很好、实盘却不行的新手。视频是流程框架，具体实现需要结合自己的数据与交易成本。</p>
+</div>
+</article></div></body></html>
