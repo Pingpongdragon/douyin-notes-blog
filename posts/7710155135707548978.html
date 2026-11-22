@@ -1,0 +1,54 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DeepSeek chat demo：手机三步接回历史对话</title><style>
+:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f6f8fb;color:#0f172a;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;line-height:1.8}
+.wrap{max-width:900px;margin:0 auto;padding:36px 18px 80px}
+article{background:#fff;border:1px solid #e5eaf2;border-radius:18px;padding:34px 38px;box-shadow:0 8px 30px rgba(15,23,42,.04)}
+h1{font-size:30px;line-height:1.3;margin:0 0 10px}h2{font-size:21px;margin:30px 0 10px}
+a{color:#2563eb;text-decoration:none}a:hover{text-decoration:underline}
+.meta{color:#64748b;font-size:14px;margin:0 0 18px}
+.cover{width:100%;border-radius:14px;display:block;margin:18px 0;border:1px solid #e5eaf2}
+.summary{background:#f8fafc;border:1px solid #e5eaf2;border-left:4px solid #3b82f6;border-radius:10px;padding:14px 18px;margin:20px 0}
+.summary strong{display:block;margin-bottom:4px}
+.body p{margin:12px 0}.body ul,.body ol{margin:10px 0 10px 22px}.body li{margin:6px 0}
+.body blockquote{margin:16px 0;padding:10px 16px;border-left:3px solid #93c5fd;background:#f8fafc;color:#334155}
+.body code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+.body pre{background:#0f172a;color:#e2e8f0;padding:14px;border-radius:10px;overflow:auto}
+.back{display:inline-block;margin-bottom:16px;color:#64748b;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{background:#fff;border:1px solid #e5eaf2;border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(15,23,42,.04);display:flex;flex-direction:column;color:inherit}
+.card img{width:100%;height:150px;object-fit:cover;display:block;background:#e2e8f0}
+.card .pad{padding:14px 16px 18px}.card h2{font-size:17px;margin:0 0 8px;line-height:1.4}
+.card p{font-size:13px;color:#475569;margin:0 0 8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card small{color:#94a3b8;font-size:12px}
+.empty{padding:40px 0;color:#64748b;text-align:center}
+@media(max-width:640px){.wrap{padding:20px 12px 50px}article{padding:22px 18px}h1{font-size:24px}}
+</style></head><body><div class="wrap"><a class="back" href="../index.html">← 返回列表</a>
+<article>
+  <h1>DeepSeek chat demo：手机三步接回历史对话</h1>
+  <p class="meta">作者：破晓AI · <a href="https://www.douyin.com/video/7710155135707548978/" target="_blank" rel="noreferrer">7710155135707548978</a> · 2026-11-22</p>
+  
+  <div class="summary"><strong>一句话总结</strong>用官方开源 chat demo 解决 App 额度/长对话上限：打开 demo、数据管理导入 App 导出的 zip（不填 key 也能导）、填开放平台 API Key 后接着聊；卡点是导出入口、zip 别解压、App 无充值入口。</div>
+  <div class="body"><h2>一句话总结</h2>
+<p>这条视频解决一个很具体的问题：DeepSeek App 遇到额度上限、长对话续不上、输出 token 到顶时，用官方开源的 <strong>DeepSeek chat demo</strong> 把历史记录导进去，在手机浏览器里接着聊；三步：打开 demo、导入 zip、填 API Key。</p>
+
+<h2>视频讲了什么</h2>
+<p>开场先点出场景：用 App 聊到一半，提示额度上限、长对话接不上、达到输出 token 上限，直接继续聊往往不行。视频给的替代方案是官方开源的 chat demo——它本身是一个可部署的聊天界面，能导入 App 导出的历史对话，再用 API Key 接着调用模型。</p>
+<p>第一步，打开 chat demo 网站。文案说直接搜“deepseek chat demo”，链接放在评论区；这一步的关键是认准官方开源项目，别进到仿冒站点。</p>
+<p>第二步，数据管理 → 导入历史对话 → 上传 App 导出的 zip → 确认导入。视频特别说明：<strong>不填 key 也能导入</strong>，所以可以先完成数据迁移，再处理 API。常见卡点是找不到导出入口，可以去网页版 chat.deepseek.com 导出；zip 不要解压，直接上传。</p>
+<p>第三步，接入 API：在开放平台创建 API Key，粘贴到 demo 的设置里，关掉设置，点左上角就能接着聊。这里要注意，demo 只是界面，真正的模型调用走 API，会产生相应费用；App 里目前没有充值入口，额度问题要回到开放平台处理。</p>
+<p>视频最后用“接上了的评论区扣已回家”做互动。整体是操作型教程，不是原理讲解；三步之外，真正容易卡住的是导出入口、zip 格式和 key 配置。</p>
+
+<h2>关键点</h2>
+<ul>
+<li><strong>适用场景</strong>：额度上限、长对话续不上、输出 token 到顶。</li>
+<li><strong>工具</strong>：官方开源 DeepSeek chat demo，手机浏览器可用。</li>
+<li><strong>第一步</strong>：打开 demo 网站，认准官方项目。</li>
+<li><strong>第二步</strong>：数据管理 → 导入历史对话 → 上传 App 导出的 zip；不填 key 也能导。</li>
+<li><strong>第三步</strong>：开放平台创建 API Key，粘贴到设置，关掉设置后点左上角继续。</li>
+<li><strong>卡点</strong>：找不到导出用网页版；zip 别解压；App 内没有充值入口。</li>
+<li><strong>成本提醒</strong>：demo 是界面，模型调用走 API，会计费。</li>
+</ul>
+
+<h2>适合谁看</h2>
+<p>DeepSeek App 重度用户、遇到额度/长对话限制又不想丢历史的人；以及想自己部署一个聊天界面接 API 的人。视频是操作教程，具体资费与 key 权限以开放平台为准。</p>
+</div>
+</article></div></body></html>
