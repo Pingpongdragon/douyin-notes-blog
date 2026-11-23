@@ -1,0 +1,52 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>量化交易到底在做什么：数据、信号、执行与风控</title><style>
+:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f6f8fb;color:#0f172a;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;line-height:1.8}
+.wrap{max-width:900px;margin:0 auto;padding:36px 18px 80px}
+article{background:#fff;border:1px solid #e5eaf2;border-radius:18px;padding:34px 38px;box-shadow:0 8px 30px rgba(15,23,42,.04)}
+h1{font-size:30px;line-height:1.3;margin:0 0 10px}h2{font-size:21px;margin:30px 0 10px}
+a{color:#2563eb;text-decoration:none}a:hover{text-decoration:underline}
+.meta{color:#64748b;font-size:14px;margin:0 0 18px}
+.cover{width:100%;border-radius:14px;display:block;margin:18px 0;border:1px solid #e5eaf2}
+.summary{background:#f8fafc;border:1px solid #e5eaf2;border-left:4px solid #3b82f6;border-radius:10px;padding:14px 18px;margin:20px 0}
+.summary strong{display:block;margin-bottom:4px}
+.body p{margin:12px 0}.body ul,.body ol{margin:10px 0 10px 22px}.body li{margin:6px 0}
+.body blockquote{margin:16px 0;padding:10px 16px;border-left:3px solid #93c5fd;background:#f8fafc;color:#334155}
+.body code{background:#f1f5f9;padding:1px 5px;border-radius:4px}
+.body pre{background:#0f172a;color:#e2e8f0;padding:14px;border-radius:10px;overflow:auto}
+.back{display:inline-block;margin-bottom:16px;color:#64748b;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{background:#fff;border:1px solid #e5eaf2;border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(15,23,42,.04);display:flex;flex-direction:column;color:inherit}
+.card img{width:100%;height:150px;object-fit:cover;display:block;background:#e2e8f0}
+.card .pad{padding:14px 16px 18px}.card h2{font-size:17px;margin:0 0 8px;line-height:1.4}
+.card p{font-size:13px;color:#475569;margin:0 0 8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card small{color:#94a3b8;font-size:12px}
+.empty{padding:40px 0;color:#64748b;text-align:center}
+@media(max-width:640px){.wrap{padding:20px 12px 50px}article{padding:22px 18px}h1{font-size:24px}}
+</style></head><body><div class="wrap"><a class="back" href="../index.html">← 返回列表</a>
+<article>
+  <h1>量化交易到底在做什么：数据、信号、执行与风控</h1>
+  <p class="meta">作者：周期之外 · <a href="https://www.douyin.com/video/7699878658810383651/" target="_blank" rel="noreferrer">7699878658810383651</a> · 2026-11-23</p>
+  
+  <div class="summary"><strong>一句话总结</strong>量化不是预测神谕，而是把数据、信号、执行、风控串成可重复流程；收益来自承担风险或纠正错误定价，算法改变信息处理与执行纪律，不消灭风险，成本与样本外验证是硬门槛。</div>
+  <div class="body"><h2>一句话总结</h2>
+<p>这条视频从底层逻辑讲量化交易：算法不是“预测神谕”，而是把<strong>数据 → 信号 → 下单 → 风控</strong>串成可重复的流程，在流动性、成本和概率优势里赚钱；它改变的是执行方式，不是消灭风险。</p>
+
+<h2>视频讲了什么</h2>
+<p>文案只给了标题，能确定的是它想回答“算法如何参与金融市场”。量化的第一步是数据：行情、成交、财务、另类数据，先保证口径一致、没有未来函数；数据错了，后面全是噪声。</p>
+<p>第二步是信号：把假设写成可以计算的规则，比如趋势、均值回归、价差、事件反应。信号要能解释“赚的是什么钱”，而不是在历史数据里硬拟合。第三步是执行：算法拆单、选时机、控制冲击成本，尽量少暴露意图；大资金尤其要考虑流动性。</p>
+<p>第四步是风控：仓位、止损、相关性、极端行情预案。量化不是没有风险，而是把风险拆成可度量的部分；杠杆和拥挤会让看似分散的策略在压力下同向亏损。</p>
+<p>视频标题说“底层逻辑”，核心大概是：算法参与市场，改变的是信息处理速度和执行纪律，不改变“收益来自承担风险或纠正错误定价”这件事。没有成本假设和样本外验证，回测再漂亮也不代表实盘有效。</p>
+
+<h2>关键点</h2>
+<ul>
+<li><strong>四段流程</strong>：数据、信号、执行、风控，缺一不可。</li>
+<li><strong>数据先行</strong>：口径一致、避免未来函数。</li>
+<li><strong>信号要有解释</strong>：赚趋势、回归、价差还是事件的钱，要说清楚。</li>
+<li><strong>执行有成本</strong>：拆单、流动性、冲击成本会吃掉收益。</li>
+<li><strong>风控不是附属</strong>：仓位、相关性、杠杆、极端预案决定能否活下来。</li>
+<li><strong>算法不消灭风险</strong>：只改变处理信息与执行纪律的方式。</li>
+</ul>
+
+<h2>适合谁看</h2>
+<p>想理解量化到底怎么参与市场、而不是只记几个指标的人；以及做主观交易、想借鉴系统化流程的人。视频是框架科普，具体策略与回测需要自己验证，不构成投资建议。</p>
+</div>
+</article></div></body></html>
